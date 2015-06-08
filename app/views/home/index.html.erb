@@ -1,2 +1,35 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="bg-dark"></div>
+
+<div class="home-information">
+    <h1 class="slogan">Any Swipe Can Change Your Life</h1>
+      <a class="btn btn-social btn-lg btn-facebook">
+      <i class="fa fa-facebook"></i> Sign in with Facebook
+    </a>
+    <br /><br />
+</div>
+
+
+<script type="text/javascript">
+
+jQuery(function(s) {
+  s.supersized({
+    slide_interval : 4000,
+    transition     : 1,
+    transition_speed : 700,
+    slide_links      : 'blank',
+
+    slides            : [
+
+        {image : 'assets/landscape.jpg'},
+        {image : 'assets/mac.jpg'},
+        {image : 'assets/macbook-mouse.jpg'},
+
+    ]
+
+  });
+
+
+});
+
+</script>
+
