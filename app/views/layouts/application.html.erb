@@ -5,8 +5,33 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
+
+  <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+      <ul class="nav navmenu-nav">
+        <li class="active"><a href="#"><i class="fa fa-users"></i> Discover</a></li>
+        <li class="active"><a href="#"><i class="fa fa-heart"></i> Matches</a></li>
+        <li class="active"><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+      </ul>
+</nav>
+<div class="navbar navbar-default navbar-fixed-top">
+  <button type="button" class="navbar-toggle button-nav" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+  <i class="fa fa-cog"></i>
+   </button>
+
+  <button type="button" class="navbar-toggle button-nav pull-right" data-toggle="offcanvas" data-target="#myNavMenu" data-canvas="body">
+  <i class="fa fa-heart"></i>
+  </button>
+
+
+</div>
+
+<a class="navbar-brand" href="#">
+  <%= image_tag "logo_white.png", alt: "Tinstuk Logo", class: "logo-brand" %>
+</a>
 
 <%= yield %>
 
