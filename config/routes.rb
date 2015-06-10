@@ -1,17 +1,13 @@
 Rails.application.routes.draw do
   root 'home#index'
 
-  get 'pages/home'
+  resources :users do
+    member do
+      get 'profile'
+      get 'matches'
+    end
+  end
 
-  get 'pages/index'
-
-  get 'users/index'
-
-  get 'users/edit'
-
-  get 'users/profile'
-
-  get 'users/matches'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
