@@ -52,9 +52,50 @@
 			$(element).bind('touchend mouseup', this.handler);
 		},
 
+		bindNew: function(element) {
+			panes = $(">ul>li", element);
+			pane_count = panes.length
+			current_pane = panes.length -1;
+		},
+
 		showPane: function (index) {
 			panes.eq(current_pane).hide();
 			current_pane = index;
+
+			var li_count = $("tinderslide > ul > li").length
+
+			if (li_count < 3) {
+
+				if( li_count ==0) {
+
+					$.ajax({
+
+						type: "GET",
+						url: "/users",
+						datatype: "script",
+
+						success: function(e){
+							//
+						}
+					});
+
+				} else {
+
+					var last_id = $("tinderslide > ul > li").first().attr("id")
+
+					$.ajax({
+
+						type: "GET",
+						url: "/users",
+						datatype: "script",
+
+						success: function(e){
+							//
+						}
+					});
+
+				} 
+			}
 		},
 
 		next: function () {
