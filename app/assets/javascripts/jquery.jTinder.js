@@ -169,6 +169,8 @@
 			}
 			else if ($.isFunction(Plugin.prototype[options])) {
 				$.data(this, 'plugin_' + pluginName)[options]();
+		    } else {
+		    	$.data(this, 'plugin_' + pluginName).bindNew(this)
 		    }
 		});
 
