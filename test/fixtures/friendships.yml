@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  friend_id: 1
+  state: MyString
+  string: MyString
+  friended_at: 2015-06-13 16:16:16
+
+two:
+  user_id: 1
+  friend_id: 1
+  state: MyString
+  string: MyString
+  friended_at: 2015-06-13 16:16:16

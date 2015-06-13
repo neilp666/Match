@@ -57,6 +57,12 @@ $("#tinderslide").jTinder({
     dislikeSelector: '.dislike'
 });
 
+
+  $('actions .like, .actions .dislike').clicl(function(e){
+    e.preventDefault();
+  $("#tinderslide").jTinder($(this).attr('class'));
+
+  });
 </script>
 
 </body>
