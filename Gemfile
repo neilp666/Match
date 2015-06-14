@@ -33,4 +33,5 @@ gem 'font-awesome-sass', '~> 4.3.0'
 gem 'omniauth-facebook'
 gem "paperclip", "~> 4.2"
 gem 'aws-sdk', "< 2.0"
+gem 'simple_form'
 

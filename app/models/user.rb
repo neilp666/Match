@@ -37,7 +37,7 @@ class User < ActiveRecord::Base
     end
 
     def accept_match(user2)
-      self.friendships.where(friend: user2).first.update_attribute)(:state, "ACTIVE")
+       self.friendships.where(friend: user2).first.update_attribute(:state, "ACTIVE")
     end
 
     def remove_match(user2)
