@@ -17,15 +17,15 @@
   <%= f.input :interest, as: :hidden, label: false %>
 
   <h4 class="text-uppercase"><small>Profile Description</small></h4>
-  <%= f.input :bio, as: :text, class: "form-control", label: false, :input_html => { :rows => 5 } %>
+  <%= f.input :bio, as: :text, class: "form-control", label: false, :input_html => { :rows => 5, class: 'form-control' } %>
 
 
   <h4 class="text-uppercase"><small>City</small></h4>
-  <%= f.input :location, class: "form-control", label: false %>
+  <%= f.input :location, label: false, :input_html => { class: 'form-control' } %>
 
   
   <h4 class="text-uppercase"><small>Age</small></h4>
-  <%= f.input :date_of_birth, as: :string, class: "form-control", label: false %>
+  <%= f.input :date_of_birth, as: :string, label: false, :input_html => { class: "form-control" } %>
 
   <br />
 

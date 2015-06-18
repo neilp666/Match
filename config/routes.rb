@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   post 'create_friendship' => "friendships#create"
   delete 'delete_friendship' => "friendships#destroy"
 
-
+  get 'matches/get_email' => "users#get_email"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
